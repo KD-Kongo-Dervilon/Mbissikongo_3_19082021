@@ -1,0 +1,77 @@
+@use "../utils/mixins" as*;
+@use "../utils/variables" as*;
+@use "../utils/colors" as*;
+@use "../base/_typography" as*;
+@use "../utils/placeholders" as *;
+
+/*=======HEADER==============*/
+.header {
+    height: 3.75rem;
+    box-shadow: $box-shadow-header;
+
+    nav {
+        display: none;
+    }
+
+    @include mediaQueries(small){
+        justify-content: space-between;
+        padding: 0 2rem;
+        .navbar {
+            display: flex;
+            &__items {
+                display: flex;
+                li {
+                    margin-left: 2rem;
+                }
+            }
+            &__link {
+                
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    @include mediaQueries(medium) {
+        box-shadow: $box-shadow-medium;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+}
+
+/*=======arrow==============*/
+
+.header {
+    position: relative;
+}
+
+.space {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .arrow {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1.5rem;
+
+        &:hover {
+            color: $primary-color;
+        }
+
+
+        &__icon {
+            font-size: 1rem;
+        }
+
+        @include mediaQueries(small){
+            &__icon {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+}
+
+

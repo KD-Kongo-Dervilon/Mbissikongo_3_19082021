@@ -1,0 +1,11 @@
+@use "./variables" as *;
+
+/*****  font-size *****/
+
+$font-size: (
+    h1: $font-size-header,
+    h2: $font-size-h2,
+    h3: $font-size-h3,
+    p: $font-size-p,
+    button: $font-size-button,
+);

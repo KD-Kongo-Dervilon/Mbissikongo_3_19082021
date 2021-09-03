@@ -1,0 +1,166 @@
+@use "../base/typography" as *;
+@use "../utils/mixins" as *;
+@use "../utils/colors" as *;
+@use "../utils/variables" as *;
+
+body {
+    font-family: $font-bold;
+}
+
+.picture img{
+    height: 18.125rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    @include flexBox(column,null,null);
+    position: relative;
+    @include margin(top, -3);
+    /*superposelemenuetl'image*/
+    @include bd-radius(2rem);
+    background-color: $background-color-light;
+    padding: 1.5rem;
+    gap: 1rem;
+
+    & section {
+        @include flexBox(column, null, null);
+        gap: 1rem;
+    }
+
+    &__heading {
+        @include margin(top, 0.3125);
+        position: relative;
+    }
+
+    &__category {
+        text-transform: uppercase;
+        width: fit-content;
+        @include margin(top, 1);
+
+        &::after {
+            display: block;
+            content: "";
+            @include margin(top, 0.25);
+            width: 2.5rem;
+            height: 0.125rem;
+            background-color: $tertiary-color;
+        }
+    }
+
+    &__card {
+        @include flexBox(row, space-between, center);
+        cursor: pointer;
+        height: 4.25rem;
+        @include bd-radius(1rem);
+        background: $white;
+        overflow: hidden;
+        box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.200);
+
+        & div {
+            width: 80%;
+            padding-left: 1.25rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+        }
+
+        & h4 {
+            font-weight: bold;
+            padding-bottom: 0.125rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        &-price {
+            font-weight: bold;
+            @include flexBox(row, flex-end, null);
+            position: relative;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+            top: 0.6rem;
+            width: 20%;
+        }
+
+        &-details {
+            font-size: 0.875rem;
+        }
+
+    }
+
+    @include mediaQueries(phone){
+        margin: -0rem auto 0rem;
+    }
+
+
+    @include mediaQueries(small) {
+        margin: -0rem auto 0rem;
+
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-template-rows: 2rem auto 3rem 3rem;
+        gap: 1rem;
+        padding: 2rem;
+        background: $white;
+
+        &__heading {
+            grid-column: 2/3;
+            text-align: center;
+        }
+
+        &__starters {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        &__main {
+
+            &-courses {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+
+        }
+
+        &__desserts {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        &__button {
+            grid-column: -3/-2;
+            grid-row: 3/4;
+        }
+
+        &__card {
+            box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.200);
+            border: 1px solid rgb(219, 209, 209);
+            height: 5.25rem;
+
+        }
+
+    }
+
+    @include mediaQueries(medium) {
+
+        &__card {
+            height: 5.25rem;
+            height: 10.25rem;
+
+        }
+    }
+
+}
+
+// la note enchantée
+.note__enchantee {
+    @include margin(top, -3); 
+}
+
+// le delices des sens 
+.sens__gout {
+    @include margin(top, -4);
+}
+
+

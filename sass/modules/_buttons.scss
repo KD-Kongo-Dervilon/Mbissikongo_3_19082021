@@ -1,0 +1,61 @@
+@use "../utils/colors" as *;
+@use "../utils/variables" as *;
+@use "../base/typography" as *;
+@use "../utils/maps" as *;
+@use "../utils/mixins" as *;
+
+// explore button
+.btn {
+    &__explore {
+        cursor: pointer;
+        height: 3.1rem;
+        padding: 0rem 1.25rem ;
+        text-align: center;
+        border-radius: 1.6rem;
+        background: linear-gradient($secondary-color, $primary-color);
+        color: $white;
+        box-shadow: $box-shadow;
+        transition:  transform .2s ease;
+
+        &:hover {
+            background: linear-gradient(lighten($secondary-color,7%), lighten($primary-color, 7%));
+            box-shadow: $box-shadow-darck;
+        }
+
+        &:active {
+            transform: scale(1.1);
+        }
+
+    }
+}
+
+// menu button
+.menu {
+    &__button {
+        width: 11.5rem;
+        margin: 2rem auto 2.5rem auto;
+        cursor: pointer;
+        height: 3.1rem;
+        padding: 0rem 1.25rem ;
+        text-align: center;
+        border-radius: 1.6rem;
+        background: linear-gradient($secondary-color, $primary-color);
+        color: $white;
+        box-shadow: $box-shadow;
+        transition:  transform .2s ease;
+
+        &:hover {
+            background: linear-gradient(lighten($secondary-color,7%), lighten($primary-color, 7%));
+            box-shadow: $box-shadow-darck;
+        }
+
+        &:active {
+            transform: scale(1.1);
+        }
+
+        @include mediaQueries(small) {
+            font-size: 1rem;
+        }
+    }
+
+}

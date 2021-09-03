@@ -1,0 +1,17 @@
+// import de variable couleurs
+@use '../utils/colors' as *;
+
+// Fonction transparent
+
+@function transparent($valeur, $number){
+    @return transparentize($valeur, $number)
+}
+
+
+@function couleur($colour){
+    @if (lightness($colour) < 25% ){
+        @return lighten($colour, 10%);
+    }@else {
+        @return darken($colour, 20%);
+    }
+}
