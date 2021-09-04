@@ -9,6 +9,16 @@
     height: 3.75rem;
     box-shadow: $box-shadow-header;
 
+    &__logo {
+        font-size: 2rem;
+        font-family: $font-shrikhand;
+        font-weight: $font-bold;
+        
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
     nav {
         display: none;
     }
