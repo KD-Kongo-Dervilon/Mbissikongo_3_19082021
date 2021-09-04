@@ -212,6 +212,7 @@ body {
         }
         &__card:nth-of-type(2)::after {
             content: "\f0ca";
+            margin-left: 1rem;
         }
         &__card:last-of-type::after {
             content: "\f54e";
@@ -345,7 +346,7 @@ body {
     }
 
     @include mediaQueries(phone) {
-        padding: 2rem;
+        padding: 2rem 2rem 6rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr 1fr;

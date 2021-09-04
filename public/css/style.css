@@ -678,6 +678,7 @@ body {
   }
   .works__card:nth-of-type(2)::after {
     content: "\f0ca";
+    margin-left: 1rem;
   }
   .works__card:last-of-type::after {
     content: "\f54e";
@@ -803,7 +804,7 @@ body {
 }
 @media screen and (min-width: 36rem) {
   .restaurants {
-    padding: 2rem;
+    padding: 2rem 2rem 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr 1fr;
@@ -1068,14 +1069,6 @@ body {
     height: 5.25rem;
     height: 10.25rem;
   }
-}
-
-.note__enchantee {
-  margin-top: -3rem;
-}
-
-.sens__gout {
-  margin-top: -4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
