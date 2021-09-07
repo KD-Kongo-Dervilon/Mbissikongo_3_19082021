@@ -484,6 +484,7 @@ body {
 }
 
 
+// keyframes translateY
 
 @keyframes translate {
     
@@ -496,6 +497,8 @@ body {
         animation-timing-function: linear;
     }
 }
+
+// keyframes fadeInout
 
 @keyframes fadeInOut {
     0% {
