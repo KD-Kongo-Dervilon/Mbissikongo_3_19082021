@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
     <!--====== Link Css =========-->
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <!--====== Link Css =========-->
     <title>ohmyfood</title>
 </head>
@@ -24,11 +24,11 @@
     <!--========= Header Start =========-->
     <header class="container row header">
         <div class="space">
-            <a class="arrow" href="index.html">
+            <a class="arrow" href="../index.html">
                 <i class="fas fa-arrow-left arrow__icon"></i>
             </a>
-            <a href="index.html" class="header__logo">
-                <img src="img/images/logo/logo2.svg" alt="logo ohmyfood " class="header__logo-img">
+            <a href="../index.html" class="header__logo">
+                <img src="../img/images/logo/logo2.svg" alt="logo ohmyfood " class="header__logo-img">
             </a>
         </div>
     </header>
@@ -37,28 +37,29 @@
 
     <!--=========== Main Start =========-->
     <main class="main">
-        <picture class="picture">
-            <source srcset="img/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" media="(max-width: 768px)">
-            <source srcset="img/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" media="(min-width: 768px)">
-            <img src="img/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat de nourriture française" />
+        <picture class="picture note">
+            <source srcset="../img/images/restaurants/styl.jpg" media="(max-width: 768px)">
+            <source srcset="../img/images/restaurants/styl.jpg" media="(min-width: 768px)">
+            <img src="../img/images/restaurants/styl.jpg" alt="plat de nourriture la note enchantée" />
         </picture>
 
-        <!--==== Menu a la française Start=====-->
-        <section class="menu">
-            <h2 class="menu__heading">À la Française</h2>
+        <!--==== Menu la note enchantée Start=====-->
+        <section class="menu note__enchantee">
+            <h2 class="menu__heading">La Note Enchantée</h2>
 
             <aside class="fav">
                 <i class="fav__empty-heart far fa-heart"></i>
                 <i class="fav__fill-heart fas fa-heart"></i>
             </aside>
 
-            <section class="menu__starters item1">
-                <h3 class="menu__category">Entrées</h3>
+            <section class="menu__starters">
+
+                <h3 class="menu__category item1">Entrées</h3>
 
                 <article class="menu__card item2">
                     <div>
-                        <h4>Tartare de poulpe acidulé</h4>
-                        <span class="menu__card-details">Aux zestes d'orange</span>
+                        <h4>Ravioles de foie gras</h4>
+                        <span class="menu__card-details">Accompagnés de leur crème à la truffe</span>
                     </div>
                     <span class="menu__card-price">25€</span>
                     <aside class="menu__card-effect"></aside>   
@@ -66,8 +67,8 @@
 
                 <article class="menu__card item3">
                     <div>
-                        <h4>Velouté de légumes d'antan</h4>
-                        <span class="menu__card-details">Carotte, panais, topinambour</span>
+                        <h4>Caviar osciètre</h4>
+                        <span class="menu__card-details">Sur blini à la farine de blé noir</span>
                     </div>
                     <span class="menu__card-price">35€</span>
                     <aside class="menu__card-effect"></aside>   
@@ -75,42 +76,51 @@
 
                 <article class="menu__card item4">
                     <div>
-                        <h4>Soupe à l'oignon</h4>
-                        <span class="menu__card-details">Revisitée</span>
+                        <h4>Homard et espuma de potiron</h4>
+                        <span class="menu__card-details">Mariné aux zestes d'orange</span>
+                    </div>
+                    <span class="menu__card-price">20€</span>
+                    <aside class="menu__card-effect"></aside>   
+                </article>
+
+                <article class="menu__card item5">
+                    <div>
+                        <h4>Foie gras de canard cuit entier</h4>
+                        <span class="menu__card-details">Confiture de figue et pain toasté</span>
                     </div>
                     <span class="menu__card-price">20€</span>
                     <aside class="menu__card-effect"></aside>   
                 </article>
 
             </section>
-            <!--==== Menu a la française End=====-->
+            <!--==== Menu la note enchantée End=====-->
             
-            <!--==== Menu a la française plat start=====-->
+            <!--==== Menu la note enchantée start=====-->
             <section class="menu__main-courses">
-                <h3 class="menu__category item5">Plats</h3>
+                <h3 class="menu__category item6">Plats</h3>
 
-                <article class="menu__card item6">
+                <article class="menu__card item7">
                     <div>
-                        <h4>Coquilles Saint-Jacques</h4>
-                        <span class="menu__card-details">Accompagnées d'une purée de panais</span>
+                        <h4>Noix de coquilles Saint-Jacques</h4>
+                        <span class="menu__card-details">Sur lit de purée de céleri-rave</span>
                     </div>
                     <span class="menu__card-price">40€</span>
                     <aside class="menu__card-effect"></aside>   
                 </article>
 
-                <article class="menu__card item7">
+                <article class="menu__card item8">
                     <div>
-                        <h4>Magret de canard</h4>
-                        <span class="menu__card-details">Et parmentier de pommes de terre</span>
+                        <h4>Langoustine poêlée</h4>
+                        <span class="menu__card-details">Purée de patate douce</span>
                     </div>
                     <span class="menu__card-price">35€</span>
                     <aside class="menu__card-effect"></aside>   
                 </article>
 
-                <article class="menu__card item8">
+                <article class="menu__card item9">
                     <div>
-                        <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-                        <span class="menu__card-details">Sur son lit de gnocchis aux légumes</span>
+                        <h4>Mijoté de queue de boeuf</h4>
+                        <span class="menu__card-details">Et riz sauvage aux zestes de citron</span>
                     </div>
                     <span class="menu__card-price">44€</span>
                     <aside class="menu__card-effect"></aside>   
@@ -121,30 +131,30 @@
             
             <!--==== Menu a la française Desserts start=====-->
             <section class="menu__desserts">
-                <h3 class="menu__category item9">Desserts</h3>
+                <h3 class="menu__category item10">Desserts</h3>
 
-                <article class="menu__card item10">
+                <article class="menu__card item11">
                     <div>
-                        <h4>Pétales de violettes glacés</h4>
-                        <span class="menu__card-details">Et purée de noisettes</span>
+                        <h4>Macaron noisette et chocolat</h4>
+                        <span class="menu__card-details">Glace au caramel brun et sel de Guérande</span>
                     </div>
                     <span class="menu__card-price">18€</span>
                     <aside class="menu__card-effect"></aside>   
                 </article>
 
-                <article class="menu__card item11">
+                <article class="menu__card item12">
                     <div>
-                        <h4>Fondant au chocolat</h4>
-                        <span class="menu__card-details">Revisité</span>
+                        <h4>Baba au rhum revisité</h4>
+                        <span class="menu__card-details">Avec son coulis de citron</span>
                     </div>
                     <span class="menu__card-price">22€</span>
                     <aside class="menu__card-effect"></aside>   
                 </article>
 
-                <article class="menu__card item12">
+                <article class="menu__card item13">
                     <div>
-                        <h4>Millefeuille croustillant</h4>
-                        <span class="menu__card-details">Myrtilles et pâte d’amande</span>
+                        <h4>Tarte au citron meringuée</h4>
+                        <span class="menu__card-details">Déstructurée</span>
                     </div>
                     <span class="menu__card-price">23€</span>
                     <aside class="menu__card-effect"></aside>   
@@ -167,7 +177,7 @@
                 <li><a class="food" href="#">Proposer un restaurant</a></li>
                 <li><a class="good" href="">Devenir partenaire</a></li>
                 <li><a href="">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="mailto:hello@ohmyfood.com">Contact</a></li>
             </ul>
         </nav>
     </footer>

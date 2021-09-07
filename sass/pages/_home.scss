@@ -430,7 +430,7 @@ body {
         cursor: pointer;
         position: relative;
         transform: scale(0);
-        color: darken($primary-color, 20%);
+        color: lighten($primary-color, 10%);
     }
 }
 
